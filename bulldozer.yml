@@ -116,7 +116,7 @@ update:
   # "trigger" defines the set of pull requests that should be updated by
   # bulldozer. It accepts the same keys as the trigger in the "merge" block.
   trigger:
-    labels: ["WIP", "Update Me"]
+    labels: ["dependencies", "WIP", "Update Me"]
 
   # "ignore" defines the set of pull requests that should not be updated by
   # bulldozer. It accepts the same keys as the ignore in the "merge" block.
@@ -126,9 +126,6 @@ update:
   # If true, bulldozer will ignore updating draft pull requests, unless they
   # explicitly match a configured trigger condition.
   ignore_drafts: true
-
-  # Pull requests targeting any of these branches are added to the trigger.
-  branches: ["dev", "main", "develop", "master"]
 
   # "required_statuses" is a list of additional status contexts that must pass
   # before bulldozer will update a pull request, unless the pull request
