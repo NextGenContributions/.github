@@ -127,6 +127,9 @@ update:
   # explicitly match a configured trigger condition.
   ignore_drafts: true
 
+  # Pull requests targeting any of these branches are added to the trigger.
+  branches: ["dev", "main", "develop", "master"]
+
   # "required_statuses" is a list of additional status contexts that must pass
   # before bulldozer will update a pull request, unless the pull request
   # explicitly matches a configured trigger condition. This is useful if you want
