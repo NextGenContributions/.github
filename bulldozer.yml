@@ -10,7 +10,7 @@ merge:
   trigger:
     # Pull requests with any of these labels (case-insensitive) are added to
     # the trigger.
-    labels: ["merge when ready"]
+    labels: ["dependencies", "trunk", "merge when ready"]
 
     # Pull requests where the body or any comment contains any of these
     # substrings are added to the trigger.
@@ -25,7 +25,7 @@ merge:
     pr_body_substrings: ["==MERGE_WHEN_READY=="]
 
     # Pull requests targeting any of these branches are added to the trigger.
-    branches: ["dev", "main", "develop", "master"]
+    # branches: ["dev", "main", "develop", "master"]
 
     # Pull requests targeting branches matching any of these regular expressions are added to the trigger.
     # branch_patterns: ["feat/.*"]
